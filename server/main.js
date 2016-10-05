@@ -1,5 +1,10 @@
 import { Meteor } from 'meteor/meteor';
 
 Meteor.startup(() => {
-  // code to run on server at startup
+  var mysqlStringConnection = "mysql://root:oss10@127.0.0.1/canapp?debug=false&charset=utf8";
+  var db = Mysql.connect(mysqlStringConnection); 
+  Users = db.meteorCollection("user", "userCollection");
+  Meteor.publish('allUsers', function(){
+    return Users.find();
+  });
 });
