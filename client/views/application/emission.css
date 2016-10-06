@@ -1,0 +1,9 @@
+.emission-title > h1{
+	font-family: Okuba;
+	color: white;
+}
+.emission-photo {
+	display: inline-block;
+	float: left;
+	margin-right: 2em;
+}

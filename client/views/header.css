@@ -15,3 +15,6 @@ left: 10px;
 .navbar-form span{
 	font-family: Lumberjack;
 }
+.navbar-form{
+	float: right !important;
+}
