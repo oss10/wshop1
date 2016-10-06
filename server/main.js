@@ -7,6 +7,8 @@ Meteor.startup(() => {
   Users = db.meteorCollection("user", "userCollection");
   Meteor.publish('allUsers', function(){
     return Users.find();
-   return Emissions.find();
+  });
+  Meteor.publish('allEmissions', function(){
+    return Emissions.find();
   });
 });

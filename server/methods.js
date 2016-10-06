@@ -14,7 +14,7 @@ Meteor.methods({
 		console.log(user);
 		Users.findOne(user)
 	}
-})
+});
 
 Meteor.methods({
 	queryDiffs: function(emission) {
@@ -22,4 +22,4 @@ Meteor.methods({
 		Emissions.findOne(emission);
 		return {msg: "METHOD OK"};
 	}
-})
+});
