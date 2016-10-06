@@ -7,3 +7,11 @@ left: 10px;
 .collapse.navbar-collapse{
 	margin-left: 10px;
 }
+ @font-face {
+    font-family: Lumberjack;
+    src: url('/font/Lumberjack.otf');
+}
+.nav a,
+.navbar-form span{
+	font-family: Lumberjack;
+}

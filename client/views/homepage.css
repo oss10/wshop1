@@ -9,7 +9,7 @@ img{
 }
 .row span{
 	position: relative;
-	top: -35px;
+	top: -100px;
 	color: white;
 	left: 30px;
 	font-family: Okuba;
@@ -19,3 +19,4 @@ img{
     font-family: Okuba;
     src: url('/font/gomarice_okuba_cloud.ttf');
 }
+

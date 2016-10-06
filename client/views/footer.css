@@ -19,5 +19,11 @@
 	
 }
 span.label{
-	color: black
+	color: black;
+	font-family: Lumberjack;
+}
+.contact a {
+	font-size: 25px;
+	display: block;
+	float: left;
 }
