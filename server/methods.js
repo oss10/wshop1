@@ -6,7 +6,11 @@ Meteor.methods({
   },
   getAllUsers: function() {
       return Users.find()
-  }
+  },
+	loginUser: function(mail, pwd) {
+       var match = Users.find({userMail: mail, userPass: pwd});
+			 return match.fetch();
+	 }
 });
 
 Meteor.methods({

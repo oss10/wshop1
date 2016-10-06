@@ -16,10 +16,16 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
+						{{#if isConnected}}
+						{{#with getUser}}
+						<li><a href="/my/account">{{userPseudo}}</a></li>
+						{{/with}}
+						{{else}}
 		        <li><a href="/login">Se connecter</a></li>
 		        <li><a href="/create/account">Créer son compte</a></li>
+						{{/if}}
 		        <li><a href="#">Proposer une séance</a></li>
-   		      </ul>
+					</ul>
 		      <form class="navbar-form navbar-left">
 		        <div class="form-group">
 		          <input type="text" class="form-control" placeholder="Search">

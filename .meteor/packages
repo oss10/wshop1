@@ -23,3 +23,5 @@ iron:router
 twbs:bootstrap
 fortawesome:fontawesome
 nodets:mysql
+dburles:google-maps
+session
