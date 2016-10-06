@@ -1,0 +1,37 @@
+<template name="createAccount">
+<div class="container">
+      <form class="form">
+        <h2 class="form">Créer un compte</h2>
+        <label for="inputUsernamee">Nom d'utilisateur</label>
+        <input type="text" id="inputUsername" class="form-control" placeholder="Pseudo"  autofocus>
+
+        <label for="inputPassword">Mot de passe</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Mot de passe" >
+
+        <label for="inputFirstname">Nom</label>
+        <input type="text" id="inputFirstname" class="form-control" placeholder="Nom" >
+        
+        <label for="inputSurname">Prénom</label>
+        <input type="text" id="inputSurname" class="form-control" placeholder="Prénom" >
+
+        <hr>
+
+        <label for="inputEmail">E-mail</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email" >
+
+        <label for="inputAddress">Adresse</label>
+        <input type="text" id="inputAddress1" class="form-control" placeholder="Adresse (ligne 1)" >
+        <input type="text" id="inputAddress2" class="form-control" placeholder="Adresse (ligne 2)">
+
+        <label for="inputPostalCode">Code postal</label>
+        <input type="number" id="inputPostalCode" class="form-control" placeholder="Code postal" >
+
+        <label for="inputCity">Ville</label>
+        <input type="text" id="inputCity" class="form-control" placeholder="Ville" >
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Go !</button>
+        {{#each users}}
+            {{userNom}}
+        {{/each}}
+      </form>
+</div>
+</template>
