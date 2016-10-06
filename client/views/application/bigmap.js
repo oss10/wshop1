@@ -1,10 +1,6 @@
-if (Meteor.isClient) {
-  Meteor.startup(function() {
+Template.bigmap.onRendered(function(){
     GoogleMaps.load();
-  })
-};
-
-
+});
 
 function vueCarte(address)
 {
@@ -17,11 +13,12 @@ function vueCarte(address)
   });
 };
 
-Template.body.helpers({
+Template.bigmap.helpers({
   exampleMapOptions: function() {
     // Vérification que l'API GoogleMaps est bien lancée
     if (GoogleMaps.loaded()) {
       // Initialisation des options de la carte
+      console.log("Maps OK !");
       return {
         center: new google.maps.LatLng(-37.8136, 144.9631),
         zoom: 8,
