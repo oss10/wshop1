@@ -19,4 +19,6 @@ img{
     font-family: Okuba;
     src: url('/font/gomarice_okuba_cloud.ttf');
 }
-
+.home-pict a{
+	text-decoration: none;
+}
