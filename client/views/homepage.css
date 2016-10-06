@@ -1,0 +1,21 @@
+.row{
+	margin-bottom: 3em;
+	overflow: hidden;
+}
+img{
+	margin-left: 10px;
+	height: 200px;
+	width: auto;
+}
+.row span{
+	position: relative;
+	top: -35px;
+	color: white;
+	left: 30px;
+	font-family: Okuba;
+	font-size: 25px;
+}
+	 @font-face {
+    font-family: Okuba;
+    src: url('/font/gomarice_okuba_cloud.ttf');
+}
