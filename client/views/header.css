@@ -1,0 +1,9 @@
+.navbar-brand{
+background: url("../images/logo_canap.svg") no-repeat;
+position: relative;
+top: 10px;
+left: 10px;
+}
+.collapse.navbar-collapse{
+	margin-left: 10px;
+}
